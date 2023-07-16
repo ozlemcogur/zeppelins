@@ -1,0 +1,380 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/montserrat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/montserrat/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/montserrat/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+
+font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+* {
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    color: #424242;
+}
+
+body {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+
+.app_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.app-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.app-logo .app_title {
+    margin-right: 1rem;
+}
+
+.app_title2 {
+    display: none;
+}
+
+.app-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.app-links li {
+    margin-left: 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.app-links li.active {
+    font-weight: 600;
+    color: #5A47AB;
+}
+
+.app-showcase {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.app-showcase-info {
+    flex: 6;
+    padding: 0 3rem;
+}
+
+.app-showcase-info h1 h3 {
+    font-size: 52px;
+    margin: 0;
+}
+
+.app-showcase-info h1 {
+    color: #D05270;
+    font-weight: bold;
+}
+
+.app-showcase-info h3 {
+    font-weight: 500;
+}
+
+.app-showcase-info p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.app-linkss {
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.app-linkss .app-link {
+    color: white;
+    font-size: 12px;
+    width: 40%;
+    height: 50%;
+    text-decoration: none;
+    padding: 20px 30px;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-linkss .app-link img {
+    margin-right: 1.5rem;
+}
+
+.app-linkss .app-link.twitter {
+    background-color: #47ACDF;
+}
+
+.app-linkss .app-link.linkedin {
+    background-color: #1275B1;
+}
+
+.app-linkss .app-link.medium {
+    background-color: black;
+}
+
+
+.app-showcase-image {
+    flex: 4;
+    padding: 0 3rem;
+    width: 35%;
+
+}
+
+.app-blog-categories {
+    list-style: none;
+    display: flex;
+}
+
+.app-blog-categories .item {
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.app-blog-categories .item.active {
+    color: #D05270;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #D05270;
+    padding: 0 2rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.app-post-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.menu-collapse {
+    display: none;
+}
+
+.app-post-list .app-post-card {
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin: 3rem 0;
+    box-sizing: border-box;
+
+
+}
+
+.post-image {
+    height: 100%;
+    width: 112%
+}
+
+
+.app-post-list .app-post-card .post-date {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+
+}
+
+.app-post-list .app-post-card .post-title {
+    font-size: 24;
+    color: #D05270;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.app-post-list .app-post-card .post-info {
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.app-post-list .app-post-card .post-detail {
+    font-size: 18px;
+    font-weight: 500;
+    color: #D05270;
+    text-decoration: none;
+    border-bottom: 1px solid #D05270;
+    padding-bottom: 5px;
+    width: fit-content;
+    margin-top: 2rem;
+}
+
+.footer {
+    position: relative;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+@media only screen and (max-width:850px) {
+    body {
+        width: 90%;
+        margin: auto;
+
+    }
+    .purple__logo {
+        margin-left: 7px;
+    }
+
+    .app-showcase-image {
+        display: none;
+    }
+
+    .app-showcase-info {
+        padding: 0;
+    }
+
+    .app-showcase-info h1 {
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .app-showcase-info h3 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .app-showcase-info p {
+        font-size: 12px;
+        font-weight: 400;
+
+    }
+
+
+    .app-linkss .app-link {
+        font-size: 8px;
+        padding: 16px;
+
+
+    }
+
+    .app-links-container {
+        opacity: 0;
+        width: 100%;
+        height: 0;
+        left: 0;
+        top: 10%;
+        position: absolute;
+        background-color: white;
+        transition: height 250ms ease-in-out;
+        z-index: -1;
+    }
+
+    .app-links-container.active {
+        opacity: 1;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .menu-collapse {
+        display: block;
+       
+    }
+
+    .app_title2 {
+        display: block;
+    }
+
+    .app_title {
+        display: none;
+    }
+
+    .app-showcase {
+        display: flex;
+        margin: 3rem 0;
+
+    }
+
+    .app-showcase-info {
+        padding: 0 3rem;
+
+    }
+    .app-post-list .app-post-card {
+        flex: 1 100%;
+    }
+
+    .app-post-list .app-post-card .post-date {
+        font-size: 10px;
+    }
+
+    .app-post-list .app-post-card .post-title {
+        font-size: 20px;
+    }
+
+    .app-post-list .app-post-card .post-info {
+        font-size: 14px;
+    }
+
+    .app-post-list .app-post-card .post-detail {
+        font-size: 14px;
+    }
+    .app-blog-categories {
+        overflow: hidden;
+        margin: 0 20px;
+    }
+
+    .app-blog-categories .item {
+        font-size: 11px;
+    }
+
+    .app-blog-categories .item.active {
+        font-size: 14px;
+
+    }
+
+    .app-links {
+        display: none;   }
+    
+
+    .menu-collapse {
+        display: block;
+
+    }
+    .app_header {
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .app-logo {
+        margin-bottom: 30px; 
+    
+    }
+    .post-image {
+        width: 100%;
+    }
+
+}
