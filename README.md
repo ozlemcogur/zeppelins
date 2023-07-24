@@ -1,5 +1,5 @@
 
-<h1> Sad Zeppelins  </h1>
+<h1> Zeppelins  </h1>
 
  This is a blog site 
 
@@ -9,4 +9,4 @@ It has been developed using HTML, CSS and JavaScript
 
 <h3> Screen </h3>
 
-![](blog.gif)
+![](zeppelins.gif)
